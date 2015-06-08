@@ -1,3 +1,10 @@
+<p>
+  <% cheap_product = Product.where('price > 1').first %>
+</p>
+<p>
+  Cheap product name:<%= cheap_product.name %> <br>
+  price: <%= cheap_product.price %>  
+</p>
 <h2>Hello World</h2>
 <h2> I AMA View </h2>
 <p>
